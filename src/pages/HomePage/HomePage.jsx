@@ -6,16 +6,8 @@ import { BooksContext } from '../../context/BooksContext';
 import BookCard from '../../components/BookCard/BookCard';
 
 const HomePage = () => {
-  const {
-    allBooks,
-    setAllBooks,
-    currentlyReadingBooks,
-    setCurrentlyReadingBooks,
-    readBooks,
-    setReadBooks,
-    wantToReadBooks,
-    setWantToReadBooks,
-  } = useContext(BooksContext);
+  const { currentlyReadingBooks, readBooks, wantToReadBooks } =
+    useContext(BooksContext);
   const navigate = useNavigate();
   return (
     <>

@@ -22,17 +22,36 @@ export const BookContextProvider = ({ children }) => {
     );
   }, [allBooks]);
 
+  const updateBookStatus = (id, status) => {
+    const bookArray = [...allBooks];
+    const bookIndex = bookArray.findIndex((book) => book.id === id);
+    if (bookIndex !== -1) {
+      bookArray[bookIndex] = { ...bookArray[bookIndex], status: status };
+      setAllBooks(bookArray);
+    }
+  };
+
+  const markReadHandler = (id) => {
+    updateBookStatus(id, 'read');
+  };
+
+  const addToCurrentlyReading = (id) => {
+    updateBookStatus(id, 'currently-reading');
+  };
+
+  const addToWantToRead = (id) => {
+    updateBookStatus(id, 'want-to-read');
+  };
+
   return (
     <BooksContext.Provider
       value={{
         allBooks,
-        setAllBooks,
         currentlyReadingBooks,
-        setCurrentlyReadingBooks,
         readBooks,
-        setReadBooks,
         wantToReadBooks,
-        setWantToReadBooks,
+        markReadHandler,
+        addToCurrentlyReading,
       }}
     >
       {children}
