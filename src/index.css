@@ -44,6 +44,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+section h1 {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--primary-text);
+  border-bottom: 1px solid var(--primary-text);
+}
 
 a {
   text-decoration: none;

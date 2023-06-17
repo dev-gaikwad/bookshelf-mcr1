@@ -30,7 +30,7 @@ const SearchPage = () => {
       {searchTerm ? (
         foundBooks.length ? (
           <section>
-            <h3>Result</h3>
+            <h1>Result</h1>
             <div className='card-container'>
               {foundBooks.map((book) => (
                 <BookCard key={book.id} book={book} />
@@ -47,7 +47,7 @@ const SearchPage = () => {
       )}
 
       <section>
-        <h3>Our Database</h3>
+        <h1>Our Database</h1>
         <div className='card-container'>
           {allBooks.map((book) => (
             <BookCard key={book.id} book={book} />

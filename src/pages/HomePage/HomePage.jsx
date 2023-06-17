@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <main>
       <section>
-        <h3>Currently Reading</h3>
+        <h1>Currently Reading</h1>
         <div className='card-container'>
           {currentlyReadingBooks.map((book) => (
             <BookCard key={book.id} book={book} />
@@ -19,7 +19,7 @@ const HomePage = () => {
       </section>
 
       <section>
-        <h3>Want to Read</h3>
+        <h1>Want to Read</h1>
         <div className='card-container'>
           {wantToReadBooks.map((book) => (
             <BookCard key={book.id} book={book} />
@@ -28,7 +28,7 @@ const HomePage = () => {
       </section>
 
       <section>
-        <h3>Already Read</h3>
+        <h1>Already Read</h1>
         <div className='card-container'>
           {readBooks.map((book) => (
             <BookCard key={book.id} book={book} />
