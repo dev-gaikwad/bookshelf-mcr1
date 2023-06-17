@@ -5,7 +5,7 @@ export const booksData = [
     author: 'F. Scott Fitzgerald',
     genre: 'Fiction',
     image: '/assets/images/book/the-great-gatsby.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '2',
@@ -29,7 +29,7 @@ export const booksData = [
     author: 'Jane Austen',
     genre: 'Fiction',
     image: '/assets/images/book/pride-and-prejudice.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '5',
@@ -37,7 +37,7 @@ export const booksData = [
     author: 'J.R.R. Tolkien',
     genre: 'Fantasy',
     image: '/assets/images/book/hobbit.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '6',
@@ -45,7 +45,7 @@ export const booksData = [
     author: 'J.D. Salinger',
     genre: 'Fiction',
     image: '/assets/images/book/catcher-in-the-rye.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '7',
@@ -61,7 +61,7 @@ export const booksData = [
     author: 'Stieg Larsson',
     genre: 'Thriller',
     image: '/assets/images/book/dragontattoo.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '9',
@@ -85,7 +85,7 @@ export const booksData = [
     author: 'James Clear',
     genre: 'Self-help',
     image: '/assets/images/book/atomic-habit.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '12',
@@ -93,7 +93,7 @@ export const booksData = [
     author: 'Michelle Obama',
     genre: 'Biography',
     image: '/assets/images/book/becoming.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '13',
@@ -101,7 +101,7 @@ export const booksData = [
     author: 'Timothy Ferriss',
     genre: 'Self-help',
     image: '/assets/images/book/4hours.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '14',
@@ -109,7 +109,7 @@ export const booksData = [
     author: 'Christopher McDougall',
     genre: 'Fitness',
     image: '/assets/images/book/born-to-run.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '15',
@@ -117,7 +117,7 @@ export const booksData = [
     author: 'Mark Manson',
     genre: 'Self-help',
     image: '/assets/images/book/subtle-art.jpg',
-    status: 'None',
+    status: 'none',
   },
   {
     id: '16',
@@ -125,6 +125,6 @@ export const booksData = [
     author: 'Frederic Delavier',
     genre: 'Fitness',
     image: '/assets/images/book/strength-training.jpg',
-    status: 'None',
+    status: 'none',
   },
 ];

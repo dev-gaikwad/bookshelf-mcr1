@@ -6,7 +6,9 @@ import './BookCard.css';
 const BookCard = ({ book }) => {
   const { id, title, author, genre, image, status } = book;
 
-  const { markReadHandler, addToCurrentlyReading } = useContext(BooksContext);
+  const { markReadHandler, addToCurrentlyReading, addToWantToRead } =
+    useContext(BooksContext);
+
   return (
     <article className='book-card'>
       <div className='book-image'>
@@ -39,10 +41,21 @@ const BookCard = ({ book }) => {
       )}
       {status === 'read' && (
         <div className='book-card-buttons-container'>
-          <button>Want to Read Again</button>
+          <button onClick={() => addToWantToRead(id)}>
+            Want to Read Again
+          </button>
           <button onClick={() => addToCurrentlyReading(id)}>
             Reading Again
           </button>
+        </div>
+      )}
+      {status === 'none' && (
+        <div className='book-card-buttons-container'>
+          <button onClick={() => addToCurrentlyReading(id)}>
+            Currently Reading
+          </button>
+          <button onClick={() => addToWantToRead(id)}>Want To Read</button>
+          <button onClick={() => markReadHandler(id)}>Mark Read</button>
         </div>
       )}
     </article>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 import { booksData } from '../data/data';
 
@@ -52,6 +52,7 @@ export const BookContextProvider = ({ children }) => {
         wantToReadBooks,
         markReadHandler,
         addToCurrentlyReading,
+        addToWantToRead,
       }}
     >
       {children}
