@@ -1,0 +1,18 @@
+.search {
+  height: 2rem;
+  font-size: 1.1rem;
+  background-color: var(--top-gradient);
+  color: var(--primary-text);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  caret-color: var(--primary-text);
+  margin: 1rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.search::placeholder {
+  color: var(--bottom-gradient);
+}

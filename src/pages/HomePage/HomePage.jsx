@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import './HomePage.css';
 import { BooksContext } from '../../context/BooksContext';
@@ -8,11 +7,8 @@ import BookCard from '../../components/BookCard/BookCard';
 const HomePage = () => {
   const { currentlyReadingBooks, readBooks, wantToReadBooks } =
     useContext(BooksContext);
-  const navigate = useNavigate();
   return (
-    <>
-      <button onClick={() => navigate('/search')}>Search</button>
-
+    <main>
       <section>
         <h3>Currently Reading</h3>
         <div className='card-container'>
@@ -39,7 +35,7 @@ const HomePage = () => {
           ))}
         </div>
       </section>
-    </>
+    </main>
   );
 };
 

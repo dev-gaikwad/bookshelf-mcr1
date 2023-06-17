@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { BooksContext } from '../context/BooksContext';
-import BookCard from '../components/BookCard/BookCard';
+import './SearchPage.css';
+import { BooksContext } from '../../context/BooksContext';
+import BookCard from '../../components/BookCard/BookCard';
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,12 +20,11 @@ const SearchPage = () => {
   }
 
   return (
-    <>
-      <button onClick={() => navigate('/')}>Go to Home</button>
-
+    <main>
       <input
         type='text'
         placeholder='Search by Book Title'
+        className='search'
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       {searchTerm ? (
@@ -54,7 +54,7 @@ const SearchPage = () => {
           ))}
         </div>
       </section>
-    </>
+    </main>
   );
 };
 
