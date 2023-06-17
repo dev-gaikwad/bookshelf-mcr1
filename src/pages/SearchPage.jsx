@@ -5,7 +5,6 @@ const SearchPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div>SearchPage</div>
       <button onClick={() => navigate('/')}>Go to Home</button>
     </>
   );
